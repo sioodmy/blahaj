@@ -26,7 +26,7 @@
             '';
           };
         in
-          pkgs.writeShellScriptBin "blahaj" ''
+          pkgs.writeShellScriptBin ":3" ''
             #!/bin/sh
             img=$(find ${blahaj-assets}/usr/share/uwu -type f | shuf -n 1)
             ${pkgs.libsixel}/bin/img2sixel $img -w 300
